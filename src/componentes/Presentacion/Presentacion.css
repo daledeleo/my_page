@@ -1,0 +1,18 @@
+.container_presentacion{
+    text-align: left;
+    padding: 30px;
+}
+
+.card_text{
+    background-color: #7280FD;
+}
+
+@media  screen and (max-width: 700px) {
+    .titulo{
+        font-size: 16px;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+}
