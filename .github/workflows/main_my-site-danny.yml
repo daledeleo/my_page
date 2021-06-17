@@ -20,6 +20,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14.x'
+    
+    - name: add process.json
+      run: |
+        echo '{ script: "serve", env: { PM2_SERVE_SPA: "true", PM2_SERVE_HOMEPAGE: "/index.html" } }' >> build/process.json
 
     - name: npm install, build, and test
       run: |
